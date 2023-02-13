@@ -83,12 +83,20 @@
                 </div>
 
                 <div class="cta">
-                    <button id="cta" type="submit">Generate QR Code</button>
+                    <button id="cta" type="submit" disabled>Generate QR Code</button>
                 </div>
             </div>
 
         </section>
-    </main>
+        <section id="qr-code-result" class="container container-back">
+            <header>
+                <h2>Your QR code is ready!</h2>
+                <h3>Scan this image and try it out!</h3>
+            </header>
+
+            <img src="" alt="qr-code" id="qr-code-image">
+        </section>
+        </main>
 
     <script src="./script.js"></script>
 </body>
