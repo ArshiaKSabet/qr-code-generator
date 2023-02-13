@@ -125,3 +125,16 @@ const addSubmitEventlistener = () => {
 };
 
 addSubmitEventlistener();
+
+const editButton = document.querySelector('#edit');
+
+const onEdit = () => {
+    settingsContainer.classList.remove('flipped');
+    resultContainer.classList.remove('flipped');
+};
+
+const addEditButtonEventListener = () => {
+    editButton.addEventListener('click', onEdit);
+};
+
+addEditButtonEventListener();
