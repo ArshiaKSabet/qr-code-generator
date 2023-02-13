@@ -77,7 +77,16 @@ const prepareParameters = params => {
     };
 };
 
-const displayQrCode = imgUrl => {};
+const settingsContainer = document.querySelector('#qr-code-settings');
+const resultContainer = document.querySelector('#qr-code-result');
+const qrCodeImg = document.querySelector('#qr-code-image');
+
+const displayQrCode = imgUrl => {
+    settingsContainer.classList.add('flipped');
+    resultContainer.classList.add('flipped');
+
+    qrCodeImg.setAttribute('src', imgUrl);
+};
 
 const submitButton = document.querySelector('#cta');
 
